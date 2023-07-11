@@ -12,17 +12,19 @@ html {
 
 @media (min-width: 0) {
   .twitter_img_form_container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 
     h1,
     h3 {
       color: $lightAccent;
+      line-height: 1;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 10vw;
       padding-bottom: 4rem;
     }
 
@@ -41,7 +43,7 @@ html {
       align-items: center;
       justify-content: center;
       order: 1;
-      width: 50%;
+      width: 100%;
       height: 100%;
       background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
       background-repeat: no-repeat;
@@ -54,7 +56,7 @@ html {
 
     .btn_container {
       // border: 3px solid red;
-      width: 50%;
+      width: 90%;
       display: flex;
       gap: calc($rem * 0.5);
       flex-direction: column;
@@ -100,9 +102,22 @@ html {
 
     .twitter_form_container {
       background-color: $dark;
-      width: 50%;
+      width: 100%;
       padding: calc($rem * 5);
-      border: 4px solid green;
+    }
+  }
+
+  footer {
+    color: $darkAccent;
+    font-size: 0.8rem;
+    padding: $rem;
+    text-align: center;
+    background-color: $dark;
+    position: relative;
+    bottom: 0;
+
+    a {
+      color: $light;
     }
   }
 }
@@ -110,9 +125,24 @@ html {
 @media (min-width: 1000px) {
   .twitter_img_form_container {
     flex-direction: row;
+    height: 100vh;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .twitter_form_container {
+      width: 50%;
+      padding: calc($rem * 5);
+    }
 
     .twitter_img_container {
+      width: 50%;
       order: 0;
+    }
+
+    .btn_container {
+      width: 50%;
     }
   }
 }
