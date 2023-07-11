@@ -1,0 +1,64 @@
+@use "color" as *;
+@use "font" as *;
+
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+@media (min-width: 0) {
+  .twitter_img_form_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    h1,
+    h3 {
+      color: $lightAccent;
+    }
+
+    .twitter_img_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 1;
+      width: 50%;
+      height: 100%;
+      background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      svg {
+        width: 50%;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      padding: calc($rem * 0.5) calc($rem * 2);
+      color: $dark;
+      border-radius: calc($rem * 2);
+      border: none;
+      outline: none;
+    }
+
+    .twitter_form_container {
+      background-color: $dark;
+      width: 50%;
+      padding: calc($rem * 5);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .twitter_img_form_container {
+    flex-direction: row;
+
+    .twitter_img_container {
+      order: 0;
+    }
+  }
+}
