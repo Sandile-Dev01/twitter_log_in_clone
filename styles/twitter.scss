@@ -10,6 +10,10 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 0) {
   .twitter_img_form_container {
     position: relative;
@@ -56,7 +60,7 @@ html {
 
     .btn_container {
       // border: 3px solid red;
-      width: 90%;
+      width: 20rem;
       display: flex;
       gap: calc($rem * 0.5);
       flex-direction: column;
@@ -78,8 +82,9 @@ html {
       border: none;
       outline: none;
       display: flex;
+      align-items: start;
+      justify-content: center;
       gap: calc($rem * 0.5);
-      align-items: center;
 
       &:hover {
         opacity: 0.95;
@@ -110,11 +115,25 @@ html {
   footer {
     color: $darkAccent;
     font-size: 0.8rem;
-    padding: $rem;
+    padding: $rem 2rem;
     text-align: center;
     background-color: $dark;
     position: relative;
     bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+
+      color: $darkAccent;
+    }
 
     a {
       color: $light;

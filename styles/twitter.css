@@ -7,6 +7,10 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 0) {
   .twitter_img_form_container {
     position: relative;
@@ -46,7 +50,7 @@ html {
     width: 50%;
   }
   .twitter_img_form_container .btn_container {
-    width: 90%;
+    width: 20rem;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
@@ -66,8 +70,9 @@ html {
     border: none;
     outline: none;
     display: flex;
+    align-items: start;
+    justify-content: center;
     gap: 0.5rem;
-    align-items: center;
   }
   .twitter_img_form_container button:hover {
     opacity: 0.95;
@@ -91,11 +96,23 @@ html {
   footer {
     color: #606060;
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: center;
     background-color: #000000;
     position: relative;
     bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  footer li {
+    list-style: none;
+    cursor: pointer;
+    color: #606060;
   }
   footer a {
     color: #1e9cf1;
