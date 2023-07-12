@@ -44,7 +44,6 @@ html {
     height: 100%;
     background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
   .twitter_img_form_container .twitter_img_container svg {
     width: 50%;
@@ -178,6 +177,7 @@ html {
   .twitter_img_form_container .twitter_img_container {
     width: 50%;
     order: 0;
+    background-attachment: fixed;
   }
   .twitter_img_form_container .btn_container {
     width: 50%;
