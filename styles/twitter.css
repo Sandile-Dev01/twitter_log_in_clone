@@ -20,19 +20,19 @@ html {
   }
   .twitter_img_form_container h1,
   .twitter_img_form_container h3 {
-    color: rgb(231, 233, 234);
+    color: #e7e9ea;
     line-height: 1;
   }
   .twitter_img_form_container h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     padding-bottom: 4rem;
   }
   .twitter_img_form_container h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding-bottom: 2rem;
   }
   .twitter_img_form_container a {
-    color: #1e9cf1;
+    color: rgb(30, 156, 241);
     text-decoration: none;
   }
   .twitter_img_form_container .twitter_img_container {
@@ -50,15 +50,30 @@ html {
     width: 50%;
   }
   .twitter_img_form_container .btn_container {
-    width: 20rem;
+    width: 90%;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
   .twitter_img_form_container .btn_container p {
     color: #606060;
     font-size: 0.7rem;
+  }
+  .twitter_img_form_container .btn_container .or_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: #ffffff;
+  }
+  .twitter_img_form_container .btn_container .or_text::before, .twitter_img_form_container .btn_container .or_text::after {
+    content: "";
+    padding: 0.5px;
+    width: 100%;
+    background-color: #606060;
+    border-radius: 2rem;
   }
   .twitter_img_form_container button {
     cursor: pointer;
@@ -85,13 +100,40 @@ html {
   }
   .twitter_img_form_container .createBtn {
     font-weight: 900;
-    background-color: #1e9cf1;
+    background-color: rgb(30, 156, 241);
     color: #ffffff;
   }
   .twitter_img_form_container .twitter_form_container {
     background-color: #000000;
     width: 100%;
-    padding: 5rem;
+    padding: 5rem 2rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini {
+    width: 4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 3rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini img {
+    width: 100%;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn {
+    margin-top: 5.5rem;
+    width: 100%;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn h4 {
+    padding-bottom: 1rem;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    background: transparent;
+    color: rgb(30, 156, 241);
+    border: 1px solid rgb(30, 156, 241);
+    transition: all 150ms ease-in-out;
+  }
+  .twitter_img_form_container .twitter_form_container .sign_in_btn button:hover {
+    background: rgba(30, 157, 241, 0.13);
   }
   footer {
     color: #606060;
@@ -115,7 +157,7 @@ html {
     color: #606060;
   }
   footer a {
-    color: #1e9cf1;
+    color: rgb(30, 156, 241);
   }
 }
 @media (min-width: 1000px) {
@@ -128,7 +170,10 @@ html {
   }
   .twitter_img_form_container .twitter_form_container {
     width: 50%;
-    padding: 5rem;
+    padding: 2rem 3rem;
+  }
+  .twitter_img_form_container .twitter_form_container .logo_mini {
+    margin-bottom: 2rem;
   }
   .twitter_img_form_container .twitter_img_container {
     width: 50%;

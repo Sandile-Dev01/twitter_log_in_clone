@@ -1,13 +1,21 @@
 @use "color" as *;
 @use "font" as *;
 
+@mixin orLine() {
+  content: "";
+  padding: 0.5px;
+  width: 100%;
+  background-color: $darkAccent;
+  border-radius: 2rem;
+}
+
 *,
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $ff-primary;
 }
 
 ::-webkit-scrollbar {
@@ -28,12 +36,12 @@ html {
     }
 
     h1 {
-      font-size: 10vw;
+      font-size: 8vw;
       padding-bottom: 4rem;
     }
 
     h3 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       padding-bottom: 2rem;
     }
 
@@ -60,15 +68,29 @@ html {
 
     .btn_container {
       // border: 3px solid red;
-      width: 20rem;
+      width: 90%;
       display: flex;
       gap: calc($rem * 0.5);
       flex-direction: column;
       align-items: center;
+      margin: 0;
 
       p {
         color: $darkAccent;
         font-size: 0.7rem;
+      }
+
+      .or_text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        color: $lightest;
+
+        &::before,
+        &::after {
+          @include orLine();
+        }
       }
     }
 
@@ -108,7 +130,39 @@ html {
     .twitter_form_container {
       background-color: $dark;
       width: 100%;
-      padding: calc($rem * 5);
+      padding: calc($rem * 5) 2rem;
+
+      .logo_mini {
+        width: 4rem;
+        object-fit: cover;
+        margin-bottom: 3rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .sign_in_btn {
+        margin-top: 5.5rem;
+        width: 100%;
+
+        h4 {
+          padding-bottom: $rem;
+        }
+
+        button {
+          font-family: $ff-primary;
+          font-weight: 900;
+          background: transparent;
+          color: $light;
+          border: 1px solid $light;
+          transition: all 150ms ease-in-out;
+
+          &:hover {
+            background: rgba(30, 157, 241, 0.13);
+          }
+        }
+      }
     }
   }
 
@@ -152,7 +206,11 @@ html {
 
     .twitter_form_container {
       width: 50%;
-      padding: calc($rem * 5);
+      padding: calc($rem * 2) calc($rem * 3);
+
+      .logo_mini {
+        margin-bottom: 2rem;
+      }
     }
 
     .twitter_img_container {
