@@ -6,7 +6,7 @@ This is a fully responsive Twitter X website I coded after taking inspiration fr
  ☄️Live demo: [www.twitter-x-mock.com](https://sandile-dev01.github.io/twitter_x/)
 
 
-🎯 Watch me code this project : [youtube.com/coding_twitter_x_website_with_html_and_sass](https://youtu.be/QBAw8P21JEQ)
+🎯 Watch me code this project : [youtube.com/build_twitter_x_clone_with_html_and_sass](https://youtu.be/-rbOnwJm3xQ)
 
 
 **This project is open source**
